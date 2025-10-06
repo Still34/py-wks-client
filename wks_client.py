@@ -242,8 +242,6 @@ class WKSClient:
     def cmd_check(self, email: str, output: Optional[str] = None) -> int:
         """Check if email has published key"""
         try:
-            print(email)
-            print(output)
             key_data = self.fetch_key(email)
 
             if not key_data:
